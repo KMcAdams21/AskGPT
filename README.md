@@ -1,0 +1,1 @@
+This is a project that seeks to create a simple GUI app to ask questions to chatGPT without having to go to the website.
