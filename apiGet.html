@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="getStyles.css">
+    <title>ChatGPT App</title>
+  </head>
+  <body>
+    <div class="header my-auto">
+      <img id="openLogo" src="./OPENAI_Logo_White.png">
+      <div id="mainTitle">
+          <h1>ChatGPT App</h1>
+      </div>
+    </div>
+    <div class="rowAlign">
+      <div id="warningBox" class="block blackBorder">
+        <p id="warning">This app requires you to locally store your OpenAI API key. We do not store this information anywhere except for your device. For more information on how to get your API key, please visit <a href="https://www.windowscentral.com/software-apps/how-to-get-an-openai-api-key" target="_blank">this page.</a></a></p>
+      </div>
+      <div id="prompt" class="block blackBorder halfWidth">
+        <h2 id="promptText">Please input API key:</h2>
+      </div>
+      <div class="block row">
+        <div id="questionBox" class="col-10 pr-0">
+          <input type="text" id="inputField" class="form-control h-100 blackBorder" placeholder="Enter API key here">
+        </div>
+        <div id="buttonDiv" class="col-2 pl-0">
+          <button id="submitBtn" class="btn btn-primary h-100" type="button">Submit</button>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      const inputField = document.getElementById('inputField');
+      const submitBtn = document.getElementById('submitBtn');
+
+      submitBtn.addEventListener('click', () => {
+        const inputValue = inputField.value;
+
+        if (inputValue.trim() !== '') {
+          myAPI.apiKeyNew(inputValue);
+        } else {
+          alert('Please enter a non-empty value.');
+        }
+      });
+    </script>
+  </body>
+</html>

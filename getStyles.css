@@ -1,0 +1,36 @@
+.rowAlign {
+    width: 90%;
+}
+
+#inputField {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#submitBtn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color:#0D5C22;
+    border-color: black;
+}
+
+#submitBtn:hover {
+    background-color: #166e2d;
+}
+
+#warningBox {
+    background-color: white;
+}
+
+#warning {
+    width: 95%;
+    margin: auto;
+}
+
+a {
+    color:#0D5C22
+}
+
+a:hover {
+    color:#1e8d3b;
+}

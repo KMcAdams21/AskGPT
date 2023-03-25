@@ -1,0 +1,162 @@
+.rowAlign {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.block {
+    width: 100%;
+    margin-top: 15px;
+    position: relative;
+}
+
+#questionBox {
+    margin-right: -25px;
+}
+
+#buttonBox {
+    margin-left: -25px;
+}
+
+body {
+    background-color: #71D199;
+    font-family: sans-serif;
+}
+
+h1 {
+    color:white;
+    height: 100%;
+}
+
+h2 {
+    color: black;
+}
+
+#questSub {
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color:#0D5C22;
+    border-color: black;
+}
+
+#questSub:hover {
+    background-color: #166e2d;
+}
+
+.centered {
+    margin: auto;
+    margin-top: 10px;
+}
+
+#answer {
+    color: black;
+    display: inline-block;
+    width: 87%;
+    border-top-right-radius: 0;
+}
+
+#openLogoChat {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    display: inline-block; 
+    width: 10%;
+}
+
+#question {
+    background-color: white;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.header {
+    background-color: #0D5C22;
+    padding: 10px 0;
+    border:black;
+    border-bottom: 1px solid;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+#openLogo {
+    padding-left: 80px;
+    height: 85%;
+    display: inline-block;
+}
+
+#mainTitle {
+    padding-left: 20px;
+    font-weight: bolder;
+    display: inline-block;
+    height: auto;
+    line-height: 1;
+    margin: 0;
+    transform: translateY(4px);
+}
+
+textarea {
+    resize: none;
+}
+
+#prompt {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#promptText {
+    transform: translateY(4px);
+}
+
+.blackBorder {
+    border:black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+.marginBottom10 {
+    margin-bottom: 10px;
+}
+
+.halfWidth {
+    width: 50%
+}
+
+#APIButtonContainer {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: auto;
+    
+}
+
+#APIButton {
+    color: black;
+    border-color:black;
+    border-style: solid;
+    border-width: 1px;
+    background-color:white;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+}
+
+#APIButton:hover {
+    background-color:#71D199;
+    transform: scale(1.1);
+}
+
+.warning {
+    background-color:rgb(245, 150, 150);
+}
+
+.lGreenBack {
+    background-color: #c8e9d8;
+}
